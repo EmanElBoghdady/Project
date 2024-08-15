@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+.wrapp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(images/img11.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+.container{
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+ 
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.logo{
+    width:20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+span{
+    color:#6b6f69;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px;
+}
+ul li a{
+    text-decoration: none;
+    color: #6b6f69;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    z-index: 1;
+}
+.content .text{
+    width: 40%;
+}
+.content .text h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    transition: 1s;
+    background-image: url(images/img14.jpg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color: transparent;
+}
+.container .text p{
+    font-size: 20px;
+    margin: 10px 0;
+    text-transform:capitalize;
+    color: rgb(161, 116, 107);
+}
+.container .text h2:hover{
+    transform: scale(1.1);
+    background-color: #ffffff;
+}
+.container .text a{
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #d093b8;
+    color: #c87272;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+.container .text a:hover{
+    filter: drop-shadow(0 0 10px #e41e91);
+}
+.content .image {
+    width: 25%;
+}
+.content .image img{
+    width: 200px;
+    border-radius: 20px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.content .image img:hover{
+    transform: scale(1.2);
+}
+.icons{
+    position: absolute;
+    bottom: 100px;
+    left:50%;
+    transform: translateX(-50%);
+
+}
+.icons img{
+    width: 50px;
+    border-radius: 10px;
+    transition: 1s;
+    margin: 0 10px;
+    z-index: 1;
+
+}
+.icons img:hover{
+    transform: scale(1.7);
+    cursor: pointer;
+}
+

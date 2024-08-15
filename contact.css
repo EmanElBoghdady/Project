@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+.wrapp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(images/img10.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    z-index: 2;
+}
+
+.logo{
+    width:20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+span{
+    color:#6b6f69;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px;
+}
+ul li a{
+    text-decoration: none;
+    color: #6b6f69;
+}
+.contact{
+    padding-top: 20px;
+    padding-bottom: 80px;
+    position: relative;
+    height: 400px;
+}
+.contact .container{
+    z-index: 2;
+    position: relative;
+}
+.contact h2{
+    font-size: 40px;
+    font-weight: bold;
+    background-image: url(images/img11.jpg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color: transparent;
+    margin: 0 0 60px;
+    text-align: center;
+}
+.contact form{
+    overflow: hidden;
+    max-width: 800px;
+    border: 1px solid rgb(15, 130, 162);
+    margin: auto;
+    padding: 10px;
+
+}
+.contact form .left{
+    float:left ;
+    width: 49%;
+}
+.contact form .right{
+    float:right ;
+    width: 45%;
+}
+.contact form input:not([type='submit']), 
+.contact form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: black solid 1px;
+    background-color: rgb(231, 242, 244);
+}
+.contact form input:not([type='submit']):focus, 
+.contact form textarea:focus{
+    outline: 2px solid rgb(205, 100, 102);
+}
+
+.contact form input{
+    height: 40px;
+}
+.contact form textarea{
+    height: 190px;
+}
+.contact form input[type="submit"]{
+    padding: 10px;
+    width: 100%;
+    border-color: transparent ;
+    background-color: rgba(22, 100, 123, 0.864);
+    color: white;
+    cursor: pointer;
+}
+.contact form input:not([type='submit']):focus::-webkit-input-placeholder,
+.contact form textarea:focus::-webkit-input-placeholder{
+    opacity: 0 ;
+    transition: .5s;
+}
